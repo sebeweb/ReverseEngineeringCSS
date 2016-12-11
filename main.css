@@ -6,12 +6,18 @@
 }
 .container{
     width: 90%;
+    padding-top: 5%;
     margin: auto;
 }
 /* header */
 .nav-bar{
+    width: 90%;
     height: 3em;
-    margin: 3% 0;
+    margin-top: 1%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: white;
 }
 .logo{
     height: 100%;
@@ -27,6 +33,7 @@
 
 .off{
     display: none;
+    height: 900px;
 }
 
 .menu:hover .off{
@@ -42,7 +49,7 @@
 
 /*carrousel*/
 .carrousel{
- 
+
 }
 .img-carrousel{
     width: 100%;
@@ -51,8 +58,84 @@
     position: absolute;
     z-index: 1;
     width: 90%;
+    height: 76%;
     background-color: rgba(0,0,0,0.4);
     text-align: center;
 }
-
+.vertical-align{
+    padding-top: 25%;
+    color: white;
+    font-size: 200%;
+}
+.descrip{
+    color: white;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+.button{
+    color: white;
+    width: 14%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+.button:hover{
+    color: black;
+    background-color: white
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    color: lightgray;
+    display: flex;
+    z-index: 3;
+}
+.copy{
+    width: 80%
+}
+.face{
+    width: 10%;
+}
+.twitter{
+    width: 10%;
+}
 /*projects*/
+
+.position{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.left{
+    background-color: blue;
+    height: 300px;
+    width: 59%;
+    margin-top: 1em;
+}
+.right{
+    background-color: red;
+    height: 300px;
+    width: 39%;
+    margin-top: 1em;
+}
+.filter-projects{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.hover:hover .filter-projects{
+    position: relative;
+    z-index: 1;
+    opacity: 0.4;
+    text-align: center;
+    background-color: black;
+}
